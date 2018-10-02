@@ -2,17 +2,17 @@
 ##
 Đây là bài viết đầu tiên trong loạt bài viết về tìm hiểu Alfresco Content repository.
 
-######Cơ bản:
+###### Cơ bản:
 - Bài 1: [Tổng quan về Alfresco](http://acc.com/thomnv/alfresco/exp-1/)
 - Bài 2: Kiến trúc source code của Alfressco Repository. (Bạn đang ở đây)
 - Bài 3: Kiến trúc Source code của Application Content.
-######Nâng cao:
+###### Nâng cao:
 - Bài 4: Cách tạo một component trong Application Content.
 - Bài 5: Cách tạo một web app như Application Content và cách deploy.
 - Bài 6: Cách tạo module AMP và truy cập module.
 - Bài 7: Cách tạo một Java Application truy cập Public Java API.
 	
-###I. General
+### I. General
 1. Mục đích của tài liệu.
 
 	Mục đích của tài liệu này là để hiểu rõ hơn cấu trúc các services và APIs trong Alfresco content manage.
@@ -37,16 +37,16 @@
 	Trong bài viết này chúng ta chỉ quan tâm đến ACS và không quan tâm đến (APS)
 	Chúng ta sẽ đi tìm các thành phần trong hình vẽ.
 	
-	#####2.1 Phía Server
+	##### 2.1 Phía Server
 	Phía server có 2 phần là ReST API và Content Repository.
 	Rest API nằm trong source code **Alfresco Remote API**, Còn Content Respository nằm trong source code **Alfresco Repository** .
 	Rest API cung cấp tập API liên quan đến content. Còn Content Repository sẽ bao gồm các services.
 	Có rất nhiều khái niệm API trong Alfresco Content Repository nhưng chúng ta chỉ giới hạn quan tâm đến Remote API. API cần thiết cho ADF components. Và bài viết này tập trung cho việc c
 
-	#####2.2 Phía Client
+	##### 2.2 Phía Client
 	Phía client được định nghĩa với Application Development Framework (ADF).ADF bao gồm các thành phần ADF components, Services nằm trong source code **ADF framework**. Để giao tiếp với RestAPI của thì Alfresco dựng lên một tập lớp nữa, đó là lớp Alfresco Javascript API. Lớp này có trách nhiệm tương tác với RestAPI của server site. Đồng thời layer này cũng tạo ra các entity rất hữu ích chứa response để dùng lại trong các services.
 
-###II. Content repository
+### II. Content repository
 1. Tổng hợp các services
 	
 	Đa phần các services sẽ nằm trong package **org.alfresco.cmr.xxxxx**. Tất cả services được sẽ được định nghĩa trong cùng một class là **ServiceRegistry**. Class này có nhiệm vụ trả về các Services khi gọi hàm get services.
