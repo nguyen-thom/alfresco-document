@@ -80,8 +80,14 @@
 	Chúng ta sẽ lấy một API để xem xét cho việc xây dựng một API cụ thể.
 	Cách chọn API để tìm hiểu về cách tổ chức services thì ta chọn API nào không liên quan đến node và task để có thể run với không có tham số nào. Do đó chúng ta sẽ chọn TaggingServices là API đơn giản nhất.
 	Repository Content được viết trên nền Spring 3 Framework. Các file được config với XML và phần enterprise được dấu đi trong source code.
+
+	2.1 **Tagging Service on Remote API **
+
+	Như chúng ta đã biết Remote API là RestAPI cho phép truy cập tới content repository.
+	Các API được miêu tả rõ ở **[REST API Explorer](https://api-explorer.alfresco.com/api-explorer/)**
 	
-	2.1 **Tagging Service**
+
+	2.2 **Tagging Service on Content Repository**
 
 	Đây là API đơn giản nhất mà chúng ta có thể dễ dàng đọc code của nó.
 
@@ -99,18 +105,19 @@
 	- org.alfresco.repo.service.ServiceDescriptorRegistry
 		- Factory bean use for create service bean.
 	- tagging-services-context.xml
-		- 
+		- Định nghĩa tag services.
 	**Các Annotation liên quan:**
 	- @AlfrescoPublicApi
+		- Định nghĩa một API. Nếu API nào được đánh dấu là PublicAPI thì chúng ta không nên update code.
 	- @NotAuditable
+		- Chỉ dùng để đánh dấu các method/Class không Auditable
 	- @Auditable
-
-
+		- Chỉ định các method/class apply parameters. Dùng để filter khi call method ở 
 3. Làm thế nào để tạo mới một service.
 4. 
-###III. Remote API
+### III. Remote API
 1. Tổng hợp các API.
 2. Cấu tạo của một API default.
 3. Làm thế nào để tạo mới một API.
 
-###IV. Thiếu sót & hạn chế.
+### IV. Thiếu sót & hạn chế.
