@@ -10,18 +10,18 @@
 - Bài 5: Cách tạo một web app như Application Content và cách deploy.
 - Bài 6: Cách tạo module AMP và truy cập module.
 - Bài 7: Cách tạo một Java Application truy cập Public Java API.
-###1. Target
+### 1. Target
 
 	Mục tiêu của bài viết này sẽ tập trung vào Application Developement Framework and cách sử dụng chúng.
 	Bài viết này cũng miêu tả một số ví dụ component trong Application Content App (Example).
 	Do chưa quen nhiều với Angular nên có một số hạn chế cần cải thiện (xem phần hạn chế)
 
-###2. ADF là gì ?
+### 2. ADF là gì ?
 
-###3. Angular JS API 
+### 3. Angular JS API 
 
-###4. How to deploy Application Content on Docker
+### 4. How to deploy Application Content on Docker
 
-###5. How to develop a ADF Application.
+### 5. How to develop a ADF Application.
 
-###6. Tài liệu tham khảo
+### 6. Tài liệu tham khảo
