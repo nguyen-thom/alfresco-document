@@ -18,3 +18,5 @@
 1. [Alfresco REST API of the future BeeCon2016](http://beecon.buzz/2016/assets/data/files/20160401001/Alfresco_REST_API_of_the_future_BeeCon2016.pdf)
 
 2. [https://community.alfresco.com/community/ecm/blog/2016/10/11/v1-rest-api-part-1-introduction](https://community.alfresco.com/community/ecm/blog/2016/10/11/v1-rest-api-part-1-introduction)
+
+3. [Building a Content Management App with ADF 2.0.0](https://app-community.alfresco.com/community/application-development-framework/blog/2017/12/15/building-a-content-management-app-with-adf-200)
