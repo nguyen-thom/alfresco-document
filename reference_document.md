@@ -4,7 +4,7 @@
 
 ###### Cơ bản:
 - Bài 1: [Tổng quan về Alfresco](http://acc.com/thomnv/alfresco/exp-1/)
-- Bài 2: Kiến trúc source code của Alfressco Repository. (Bạn đang ở đây)
+- Bài 2: Kiến trúc source code của Alfressco Repository.
 - Bài 3: Kiến trúc Source code của Application Content.
 ###### Nâng cao:
 - Bài 4: Cách tạo một component trong Application Content.
